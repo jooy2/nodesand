@@ -30,4 +30,4 @@ $ npm run watch
 ```
 
 ## Licsense
-Copyright © 2021 Jooyeon Lee Released under the MIT license.
+Copyright © 2021 Jooy2 Released under the MIT license.

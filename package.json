@@ -14,13 +14,13 @@
   "author": "Jooy Lee <leejooy96@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^4.1.0",
-    "ora": "^5.4.0"
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
   },
   "devDependencies": {
-    "eslint": "^7.24.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.7"
+    "eslint-plugin-import": "^2.24.0",
+    "nodemon": "^2.0.12"
   }
 }
