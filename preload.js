@@ -1,12 +1,13 @@
-const chalk = require('chalk');
-const ora = require('ora');
-const { performance } = require('perf_hooks');
-const main = require('./src/index.js');
+import ora from 'ora';
+import chalk from 'chalk';
+import { performance } from 'perf_hooks';
+
+import main from './src/index.js';
+
+const DIVIDER = '==================================================';
 
 const { log, clear, error } = console;
-
 let spinner;
-const divider = '==================================================';
 
 const stopSpinner = () => {
   log('');
@@ -16,7 +17,7 @@ const stopSpinner = () => {
 const welcome = async () => {
   clear();
   log(chalk.yellow(new Date()));
-  log(chalk.blue(divider));
+  log(chalk.blue(DIVIDER));
   spinner = ora({
     text: 'Main function is running...\n',
     spinner: 'dots',
@@ -29,7 +30,7 @@ const done = () => {
     stopSpinner();
     ora().succeed('Done!');
   }
-  log(chalk.blue(divider));
+  log(chalk.blue(DIVIDER));
   log(chalk.greenBright(`${performance.now()} ms`));
 };
 

@@ -3,4 +3,4 @@ const main = (next) => {
   next();
 };
 
-module.exports = main;
+export default main;

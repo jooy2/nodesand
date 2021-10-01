@@ -2,6 +2,7 @@
   "name": "quick-node-tester",
   "version": "1.0.0",
   "description": "Quick NodeJS Tester",
+  "type": "module",
   "main": "preload.js",
   "scripts": {
     "once": "node ./preload.js",
@@ -9,18 +10,18 @@
     "dev": "npm run once"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.13.1"
   },
-  "author": "Jooy Lee <leejooy96@gmail.com>",
+  "author": "Jooy2 <jootc.help@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
-    "ora": "^5.4.1"
+    "ora": "^6.0.1"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.0",
-    "nodemon": "^2.0.12"
+    "eslint-plugin-import": "^2.24.2",
+    "nodemon": "^2.0.13"
   }
 }
