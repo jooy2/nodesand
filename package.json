@@ -14,14 +14,12 @@
   },
   "author": "Jooy2 <jootc.help@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "ora": "^6.0.1"
-  },
   "devDependencies": {
     "eslint": "^8.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.2",
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.14",
+    "chalk": "^4.1.2",
+    "ora": "^6.0.1"
   }
 }
