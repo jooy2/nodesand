@@ -2,7 +2,7 @@ import ora from 'ora';
 import chalk from 'chalk';
 import { performance } from 'perf_hooks';
 
-import main from './src/index.js';
+import main from '../node/index.js';
 
 const DIVIDER = '==================================================';
 

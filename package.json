@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Quick NodeJS Tester",
   "type": "module",
-  "main": "preload.js",
+  "main": "index.js",
   "scripts": {
-    "once": "node ./preload.js",
-    "watch": "nodemon ./preload.js",
+    "once": "node src/_preload",
+    "watch": "nodemon src/_preload",
+    "serve": "serve src/www",
+    "www": "npm run serve",
     "dev": "npm run once"
   },
   "engines": {
@@ -15,11 +17,14 @@
   "author": "Jooy2 <jootc.help@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.1.0",
+    "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.2",
-    "nodemon": "^2.0.14",
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
     "chalk": "^4.1.2",
-    "ora": "^6.0.1"
+    "ora": "^6.0.1",
+    "serve": "^13.0.2"
   }
 }
