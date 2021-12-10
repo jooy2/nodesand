@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Quick NodeJS Tester",
   "type": "module",
-  "main": "index.js",
+  "exports": "./index.js",
   "scripts": {
     "once": "node src/_preload",
     "watch": "nodemon src/_preload",
@@ -12,7 +12,7 @@
     "dev": "npm run once"
   },
   "engines": {
-    "node": ">=14.13.1"
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "author": "Jooy2 <jootc.help@gmail.com>",
   "license": "MIT",
