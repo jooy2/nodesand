@@ -12,14 +12,14 @@
     "dev": "npm run once"
   },
   "engines": {
-    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    "node": "^14.18.3 || >=16.0.0"
   },
   "author": "Jooy2 <jootc.help@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.4.1",
+    "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "nodemon": "^2.0.15"
   },
   "dependencies": {

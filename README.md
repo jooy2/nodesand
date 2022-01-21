@@ -1,5 +1,5 @@
 # 🔭 Quick Node Tester
-Quick Node Tester provides a template to run or test simple Node.js scripts. (Require Node 12 or higher)
+Quick Node Tester provides a template to run or test simple Node.js scripts. (Require Node 14 or higher)
 
 ## Features
 - ESLint (airbnb-base)
