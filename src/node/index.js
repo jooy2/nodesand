@@ -1,6 +1,4 @@
-const main = (next) => {
+export default function main(next) {
   console.log('Main');
   next();
-};
-
-export default main;
+}
