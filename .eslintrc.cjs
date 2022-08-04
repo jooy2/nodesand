@@ -10,9 +10,7 @@ module.exports = {
         'ecmaVersion': 12
     },
     'rules': {
-        'linebreak-style': [
-            'error', 'unix'
-        ],
+        'linebreak-style': 0,
         'import/extensions': 0
     }
 }
