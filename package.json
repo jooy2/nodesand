@@ -2,6 +2,7 @@
   "name": "quick-node-tester",
   "version": "1.0.0",
   "description": "Quick NodeJS Tester",
+  "private": true,
   "type": "module",
   "exports": "./index.js",
   "scripts": {
