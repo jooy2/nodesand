@@ -1,7 +1,7 @@
 {
-  "name": "quick-node-tester",
+  "name": "nodesand",
   "version": "1.0.0",
-  "description": "Quick NodeJS Tester",
+  "description": "Super Simple NodeJS Sandbox",
   "private": true,
   "type": "module",
   "exports": "./index.js",
