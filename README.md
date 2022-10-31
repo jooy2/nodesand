@@ -38,7 +38,7 @@ $ npm run dev
 Run whenever the script file changes with the following command:
 
 ```shell
-$ npm run watch 
+$ npm run watch
 ```
 
 ### Static html serve
@@ -56,7 +56,6 @@ $ npm run www
 ```
 
 Now you can try opening the html file with `http://localhost:3000`. Any changes will be updated immediately. (requires refresh)
-
 
 ## License
 
