@@ -1,4 +1,4 @@
 export default function main(next) {
-	console.log('Main');
-	next();
+  console.log('Main');
+  next();
 }

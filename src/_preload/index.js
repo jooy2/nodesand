@@ -10,39 +10,39 @@ const { log, clear, error } = console;
 let spinner;
 
 const stopSpinner = () => {
-	log('');
-	spinner.stop();
+  log('');
+  spinner.stop();
 };
 
 const welcome = async () => {
-	clear();
-	log(chalk.yellow(new Date()));
-	log(chalk.blue(DIVIDER));
-	spinner = ora({
-		text: 'Main function is running...\n',
-		spinner: 'dots'
-	}).start();
-	performance.now();
+  clear();
+  log(chalk.yellow(new Date()));
+  log(chalk.blue(DIVIDER));
+  spinner = ora({
+    text: 'Main function is running...\n',
+    spinner: 'dots'
+  }).start();
+  performance.now();
 };
 
 const done = () => {
-	if (spinner.isSpinning) {
-		stopSpinner();
-		ora().succeed('Done!');
-	}
-	log(chalk.blue(DIVIDER));
-	log(chalk.greenBright(`${performance.now()} ms`));
+  if (spinner.isSpinning) {
+    stopSpinner();
+    ora().succeed('Done!');
+  }
+  log(chalk.blue(DIVIDER));
+  log(chalk.greenBright(`${performance.now()} ms`));
 };
 
 (async () => {
-	try {
-		await welcome();
-		main(() => {
-			done();
-		});
-	} catch (e) {
-		stopSpinner();
-		ora().fail('Failed!');
-		error(e);
-	}
+  try {
+    await welcome();
+    main(() => {
+      done();
+    });
+  } catch (e) {
+    stopSpinner();
+    ora().fail('Failed!');
+    error(e);
+  }
 })();
