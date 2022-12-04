@@ -17,16 +17,16 @@
 	"engines": {
 		"node": "^14.18.3 || >=16.0.0"
 	},
-	"author": "Jooy2 <jootc.help@gmail.com>",
+	"author": "Jooy2 <jooy2.contact@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"eslint": "^8.27.0",
+		"eslint": "^8.29.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-import": "^2.26.0",
 		"nodemon": "^2.0.20",
-		"prettier": "^2.7.1",
-		"serve": "^14.1.1"
+		"prettier": "^2.8.0",
+		"serve": "^14.1.2"
 	},
 	"dependencies": {
 		"chalk": "^5.1.2",
