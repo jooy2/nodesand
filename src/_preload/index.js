@@ -4,7 +4,7 @@ import { performance } from 'perf_hooks';
 
 import main from '../node/index.js';
 
-const DIVIDER = '==================================================';
+const DIVIDER = '='.repeat(50);
 
 const { log, clear, error } = console;
 let spinner;
