@@ -2,6 +2,16 @@
 
 Quick NodeJS Sandbox provides a template to run or test simple Node.js scripts. (Require Node 14 or higher)
 
+```shell
+Tue Jan 31 2023 09:03:30 GMT+0900 (Korean Standard Time)
+==================================================
+⠋ Main function is running...
+Hello, World!
+✔ Done!
+==================================================
+50.02708297967911 ms
+```
+
 ## Features
 
 - Serve static html file

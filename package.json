@@ -20,6 +20,14 @@
   },
   "author": "Jooy2 <jooy2.contact@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jooy2/nodesand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jooy2/nodesand/issues"
+  },
+  "homepage": "https://github.com/jooy2/nodesand",
   "devDependencies": {
     "eslint": "^8.33.0",
     "eslint-config-airbnb-base": "^15.0.0",
