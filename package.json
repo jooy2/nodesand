@@ -34,7 +34,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "prettier": "^2.8.3",
     "serve": "^14.2.0"
   },
