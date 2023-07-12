@@ -1,4 +1,5 @@
 export default function main(next) {
-  console.log('Main');
+  console.log(process.versions);
+
   next();
 }
