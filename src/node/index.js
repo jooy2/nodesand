@@ -1,5 +1,5 @@
 export default function main(next) {
-  console.log('Main');
+  process.stdout.write('Main');
 
   next();
 }
