@@ -14,7 +14,7 @@
     "test": "npm run once",
     "format": "prettier .",
     "format:fix": "prettier . --write",
-    "reset": "git reset HEAD --hard"
+    "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/' && npm i"
   },
   "engines": {
     "node": ">=16.0.0"
