@@ -1,6 +1,6 @@
 # 🔭 NodeSand
 
-Quick NodeJS Sandbox provides a template to run or test simple Node.js scripts. (Require Node 14 or higher)
+Quick Node.js Sandbox provides a template to run or test simple Node.js scripts. (Require Node 18 or higher)
 
 ```shell
 Tue Jan 31 2023 09:03:30 GMT+0900 (Korean Standard Time)
@@ -69,4 +69,4 @@ Now you can try opening the html file with `http://localhost:3000`. Any changes 
 
 ## License
 
-Copyright © 2021-2024 [Jooy2](https://jooy2.com) <[jooy2.contact@gmail.com](mailto:jooy2.contact@gmail.com)> Released under the MIT license.
+Copyright © 2021-2025 [CDGet](https://cdget.com) <[jooy2.contact@gmail.com](mailto:jooy2.contact@gmail.com)> Released under the MIT license.
