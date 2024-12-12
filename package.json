@@ -17,7 +17,7 @@
     "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/' && npm i"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "author": "Jooy2 <jooy2.contact@gmail.com>",
   "license": "MIT",
@@ -33,13 +33,13 @@
     "eslint": "^8.55.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.0",
-    "nodemon": "^3.0.2",
-    "prettier": "^3.1.0",
-    "serve": "^14.2.1"
+    "eslint-plugin-import": "^2.31.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.2",
+    "serve": "^14.2.4"
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "ora": "^7.0.1"
+    "ora": "^8.1.1"
   }
 }
