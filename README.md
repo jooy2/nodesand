@@ -67,6 +67,11 @@ $ npm run www
 
 Now you can try opening the html file with `http://localhost:3000`. Any changes will be updated immediately. (requires refresh)
 
+## Contributing
+
+Anyone can contribute to the project by reporting new issues or submitting a pull request. For more information, please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
-Copyright © 2021-2025 [CDGet](https://cdget.com) <[jooy2.contact@gmail.com](mailto:jooy2.contact@gmail.com)> Released under the MIT license.
+Please see the [LICENSE](LICENSE) file for more information about project owners, usage rights, and more.
+

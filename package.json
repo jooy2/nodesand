@@ -1,7 +1,7 @@
 {
   "name": "nodesand",
   "version": "1.0.0",
-  "description": "Super Simple NodeJS Sandbox",
+  "description": "Super Simple Node.js Sandbox",
   "private": true,
   "type": "module",
   "exports": "./index.js",
@@ -19,7 +19,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "author": "Jooy2 <jooy2.contact@gmail.com>",
+  "author": "CDGet <jooy2.contact@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
