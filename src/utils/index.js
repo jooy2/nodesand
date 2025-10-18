@@ -24,7 +24,6 @@ export const runBenchmark = (testItems, runTimes = 30000000) => {
   const testStart = new Date();
   const results = [];
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const item of testItems) {
     performance.now();
     for (let i = 0; i < runTimes; i += 1) {
@@ -38,13 +37,11 @@ export const runBenchmark = (testItems, runTimes = 30000000) => {
 
   const line = `${'-'.repeat(10)}> `;
 
-  // eslint-disable-next-line no-console
   console.log(
     `\n${line}Start Time: ${testStart}\n${line}End   Time: ${new Date()}\n${line}Run  Times: ${Intl.NumberFormat().format(
       runTimes
     )}\n${line}Results: `
   );
-  // eslint-disable-next-line no-console
   console.dir(results, { depth: null });
 };
 
