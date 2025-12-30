@@ -1,12 +1,12 @@
-import { globalIgnores } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import pluginJs from '@eslint/js';
-import pluginHtml from 'eslint-plugin-html'
+import pluginHtml from 'eslint-plugin-html';
 import pluginNode from 'eslint-plugin-n';
 import configPrettier from 'eslint-config-prettier';
 
 import globals from 'globals';
 
-export default [
+export default defineConfig([
   pluginJs.configs.recommended,
   pluginNode.configs['flat/recommended-script'],
   globalIgnores(['**/.idea', '**/.vscode', '**/node_modules', '**/dist', '**/package-lock.json']),
@@ -20,8 +20,8 @@ export default [
         ...globals.node
       },
       parserOptions: {
-        requireConfigFile: false,
-      },
+        requireConfigFile: false
+      }
     },
     rules: {
       eqeqeq: 'error',
@@ -32,12 +32,12 @@ export default [
       'no-unused-vars': 'off',
       'n/no-missing-import': 'off',
       'n/no-unpublished-import': 'off',
-      'n/no-unsupported-features/node-builtins': 'off',
+      'n/no-unsupported-features/node-builtins': 'off'
     }
   },
   {
     files: ['**/*.html'],
-    plugins: { pluginHtml },
+    plugins: { pluginHtml }
   },
   configPrettier
-];
+]);
