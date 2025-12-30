@@ -15,7 +15,7 @@ Hello, World!
 ## Features
 
 - Serve static html file
-- ESLint (airbnb-base) support
+- ESLint support
 - Observation mode
 - Execution time report
 
