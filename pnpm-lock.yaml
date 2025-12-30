@@ -42,6 +42,9 @@ importers:
       serve:
         specifier: ^14.2.5
         version: 14.2.5
+      tinybench:
+        specifier: ^6.0.0
+        version: 6.0.0
 
 packages:
 
@@ -814,6 +817,10 @@ packages:
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
+
+  tinybench@6.0.0:
+    resolution: {integrity: sha512-BWlWpVbbZXaYjRV0twGLNQO00Zj4HA/sjLOQP2IvzQqGwRGp+2kh7UU3ijyJ3ywFRogYDRbiHDMrUOfaMnN56g==}
+    engines: {node: '>=20.0.0'}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -1626,6 +1633,8 @@ snapshots:
       has-flag: 4.0.0
 
   tapable@2.3.0: {}
+
+  tinybench@6.0.0: {}
 
   to-regex-range@5.0.1:
     dependencies:

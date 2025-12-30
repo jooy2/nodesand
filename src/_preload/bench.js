@@ -1,12 +1,12 @@
-import { performance } from 'perf_hooks';
+import { Bench } from 'tinybench';
 import ora from 'ora';
 import chalk from 'chalk';
-
-import main from '../node/index.js';
+import { performance } from 'perf_hooks';
+import defineBenchmarks, { benchConfiguration } from '../bench/index.js';
 
 const DIVIDER = '='.repeat(process.stdout.columns);
 
-const { log, clear, error } = console;
+const { log, clear, error, table } = console;
 let spinner;
 
 const stopSpinner = () => {
@@ -19,27 +19,36 @@ const welcome = async () => {
   log(chalk.yellow(new Date()));
   log(chalk.blue(DIVIDER));
   spinner = ora({
-    text: 'Main function is running...\n',
+    text: 'Benchmark is running...\n',
     spinner: 'dots'
   }).start();
   performance.now();
 };
 
-const done = () => {
+const done = (bench) => {
   if (spinner.isSpinning) {
     stopSpinner();
     ora().succeed('Done!');
   }
   log(chalk.blue(DIVIDER));
+  log(`${bench.name}: `);
   log(chalk.greenBright(`${performance.now()} ms`));
 };
+
+const bench = new Bench(benchConfiguration);
 
 (async () => {
   try {
     await welcome();
-    main(() => {
-      done();
-    });
+
+    defineBenchmarks(bench);
+
+    await bench.run();
+
+    done(bench);
+
+    // Higher `Samples` values result in faster operation.
+    table(bench.table());
   } catch (e) {
     stopSpinner();
     ora().fail('Failed!');
