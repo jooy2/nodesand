@@ -115,6 +115,17 @@ $ npm run www
 
 Now you can try opening the HTML file with `http://localhost:3000`. Any changes will be updated immediately. (requires refresh)
 
+### Quickly restart the task
+
+Use the command below to quickly reset the code to its initial state:
+
+```shell
+# Code reset
+$ npm run reset
+# Additionally, initialize `package.json` and reset the modules.
+$ npm run reset:all
+```
+
 ## Contributing
 
 Anyone can contribute to the project by reporting new issues or submitting a pull request. For more information, please see [CONTRIBUTING.md](CONTRIBUTING.md).

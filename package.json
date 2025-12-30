@@ -16,10 +16,11 @@
     "lint": "eslint . --ext .js,.mjs,.cjs,.vue src",
     "format": "prettier .",
     "format:fix": "prettier . --write",
-    "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/' && npm i"
+    "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/'",
+    "reset:all": "npm run reset && npm i"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "author": "CDGet <jooy2.contact@gmail.com>",
   "license": "MIT",
