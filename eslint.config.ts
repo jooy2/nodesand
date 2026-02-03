@@ -14,7 +14,7 @@ export default defineConfig([
   pluginNode.configs['flat/recommended-script'],
   globalIgnores(['**/.idea', '**/.vscode', '**/node_modules', '**/dist', '**/package-lock.json']),
   {
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -36,7 +36,16 @@ export default defineConfig([
       'no-unused-vars': 'off',
       'n/no-missing-import': 'off',
       'n/no-unpublished-import': 'off',
-      'n/no-unsupported-features/node-builtins': 'off'
+      'n/no-unsupported-features/node-builtins': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_'
+        }
+      ],
+      '@typescript-eslint/no-explicit-any': 'off'
     }
   },
   {

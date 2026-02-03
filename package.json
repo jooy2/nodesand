@@ -42,6 +42,7 @@
     "eslint-plugin-html": "^8.1.4",
     "eslint-plugin-n": "^17.23.2",
     "globals": "^17.3.0",
+    "jiti": "^2.6.1",
     "prettier": "^3.8.1",
     "serve": "^14.2.5",
     "tinybench": "^6.0.0",

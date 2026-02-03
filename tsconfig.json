@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "lib",
     "target": "esnext",
     "module": "Preserve",
     "moduleDetection": "force",
@@ -10,6 +9,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "declaration": true,
     "outDir": "./dist",
