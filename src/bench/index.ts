@@ -1,6 +1,6 @@
 export const benchConfiguration = { name: 'Benchmark', time: 100 };
 
-export default function defineBenchmarks(bench) {
+export default function defineBenchmarks(bench: any) {
   bench
     .add('faster task', () => {
       console.log('I am faster');

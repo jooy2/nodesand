@@ -17,7 +17,7 @@
  *   { name: 'regex:test', time: '848.7695000171661 ms' }
  * ]
  * */
-export const runBenchmark = (testItems, runTimes = 30000000) => {
+export const runBenchmark = (testItems: any, runTimes = 30000000) => {
   if (!testItems || typeof testItems !== 'object') {
     throw new Error('testItems params must be specified correctly');
   }

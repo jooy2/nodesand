@@ -7,7 +7,7 @@ import defineBenchmarks, { benchConfiguration } from '../bench/index.js';
 const DIVIDER = '='.repeat(process.stdout.columns);
 
 const { log, clear, error, table } = console;
-let spinner;
+let spinner: any;
 
 const stopSpinner = () => {
   log('');
@@ -25,7 +25,7 @@ const welcome = async () => {
   performance.now();
 };
 
-const done = (bench) => {
+const done = (bench: any) => {
   if (spinner.isSpinning) {
     stopSpinner();
     ora().succeed('Done!');

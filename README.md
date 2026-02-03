@@ -16,7 +16,8 @@ Hello, World!
 
 - Serve static HTML file
 - Code benchmarking
-- ESLint support
+- TypeScript support
+- ESLint & Prettier support
 - Observation mode
 - Execution time report
 

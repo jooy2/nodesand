@@ -7,7 +7,7 @@ import main from '../node/index.js';
 const DIVIDER = '='.repeat(process.stdout.columns);
 
 const { log, clear, error } = console;
-let spinner;
+let spinner: any;
 
 const stopSpinner = () => {
   log('');
