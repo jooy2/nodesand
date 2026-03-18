@@ -17,7 +17,7 @@
     "lint": "eslint . --ext .js,.mjs,.cjs,.ts,.mts,.cts src",
     "format": "prettier .",
     "format:fix": "prettier . --write",
-    "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/'",
+    "reset": "git reset HEAD --hard && git clean -f -d -x -e '.idea/' -e 'node_modules/' -e 'dist/'",
     "reset:all": "npm run reset && npm i"
   },
   "engines": {
